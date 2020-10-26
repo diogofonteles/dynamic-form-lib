@@ -1,0 +1,15 @@
+{
+  "name": "dynamic-form-diogofonteles",
+  "author": {"name": "Diogo Fonteles"},
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^10.2.0",
+    "@angular/core": "^10.2.0",
+    "@angular/cdk": "^10.2.5",
+    "@angular/material": "^10.2.5",
+    "@angular/forms": "~10.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+<mat-form-field class="full-width" [formGroup]="group">
+  <input
+    matInput
+    [formControlName]="control.name"
+    [placeholder]="control.label"
+    [type]="control.inputType"
+    [attr.id]="control.id"
+  />
+  <ng-container
+    *ngFor="let validation of control.validations"
+    ngProjectAs="mat-error"
+  >
+    <mat-error *ngIf="group.get(control.name).hasError(validation.name)">{{
+      validation.message
+    }}</mat-error>
+  </ng-container>
+</mat-form-field>

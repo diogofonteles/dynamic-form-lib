@@ -1,0 +1,9 @@
+<mat-form-field class="full-width margin-top" [formGroup]="group">
+  <label class="list-label">{{ control.label }}</label>
+  <input matInput style="display: none!important">
+  <mat-selection-list [formControlName]="control.name">
+    <mat-list-option *ngFor="let item of control.options" [value]="item.value" [selected]="item.selected">
+      {{item.label}}
+    </mat-list-option>
+  </mat-selection-list>
+</mat-form-field>
